@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>Document</title>
+</head>
+<body>
+    <h1>multimedia tags</h1>
+    <h1>image tag</h1>
+    <img src="https://tse2.mm.bing.net/th/id/OIP.1mjpv0xlByRGU3F8NRdqsAHaJG?pid=Api&P=0&h=180"
+    <h1>audio tag</h1>
+    <audio controls>
+        <source src="Dekhlenge_Saala.mp3"
+    </audio>
+</body>
+</html>
