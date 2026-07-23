@@ -1,0 +1,94 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+.container{
+    height: 10vh;
+    width: 10vw;
+    border: 2px soild red;
+}
+.child1{
+    height: 20vh;
+    width: 20vw;
+    background-color: blue;
+    animation-name:some;
+    animation-duration: 5s;
+    animation-delay:1s;
+    animation-timing-function:ease-in;
+}
+.child2{
+    height: 20vh;
+    width: 20vw;
+    background-color: blue;
+    animation-name:some;
+    animation-duration: 5s;
+    animation-delay:1s;
+    animation-timing-function:ease-out;
+}
+.child3{
+    height: 20vh;
+    width: 20vw;
+    background-color: blue;
+    
+    animation-name:some;
+    animation-duration: 5s;
+    animation-delay:1s;
+    animation-timing-function:ease-in-out;
+}
+.child4{
+    height: 20vh;
+    width: 20vw;
+    background-color: blue;
+    animation-name:some;
+    animation-duration: 5s;
+    animation-delay:1s;
+    animation-timing-function:linear;
+}
+.child5{
+    height: 20vh;
+    width: 20vw;
+    background-color: blue;
+    animation-name:some;
+    animation-duration: 5s;
+    animation-delay:1s;
+    animation-timing-function:ease-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+
+}
+@keyframes some{
+    0%{
+        background-color: red;
+        position: absolute;
+        top:0px;
+        left: 0px;
+    }
+     10%{
+        background-color: yellow;
+        position:absolute;
+        top:0px;
+        right:0px;
+
+    }
+    25%{
+        background-color:pink;
+        position:absolute;
+        bottom:0px;
+        left:0px;
+    }
+    50%{
+        background-color: black;
+        position:absolute;
+        bottom:0px;
+        right:0px;
+    }
+    75%{
+        background-color: aquamarine;    
+    }
+    100%{
+        background-color: brown;
+    }
+
+}
