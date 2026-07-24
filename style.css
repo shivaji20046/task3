@@ -1,94 +1,51 @@
 *{
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-
 }
 .container{
-    height: 10vh;
-    width: 10vw;
+    height: 98vh;
+    width: 100vw;
     border: 2px soild red;
+    display:grid;
+    gap:10px;
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* grid-template-columns:repeat(1,100px); */
+    /* grid-template-rows:repeat(1,100px); */  
 }
 .child1{
-    height: 20vh;
-    width: 20vw;
     background-color: blue;
-    animation-name:some;
-    animation-duration: 5s;
-    animation-delay:1s;
-    animation-timing-function:ease-in;
-}
+    grid-column-start:1;
+    grid-column-end:6; 
+    grid-row-start:1;
+    grid-row-end:2;
+} 
 .child2{
-    height: 20vh;
-    width: 20vw;
-    background-color: blue;
-    animation-name:some;
-    animation-duration: 5s;
-    animation-delay:1s;
-    animation-timing-function:ease-out;
-}
+    background-color:greenyellow;
+    grid-column-start:1;
+    grid-column-end:2; 
+    grid-row-start:2;
+    grid-row-end:5;
+} 
 .child3{
-    height: 20vh;
-    width: 20vw;
-    background-color: blue;
-    
-    animation-name:some;
-    animation-duration: 5s;
-    animation-delay:1s;
-    animation-timing-function:ease-in-out;
-}
+    background-color:skyblue;
+    grid-column-start:2;
+    grid-column-end:5; 
+    grid-row-start:2;
+    grid-row-end:5;
+} 
 .child4{
-    height: 20vh;
-    width: 20vw;
-    background-color: blue;
-    animation-name:some;
-    animation-duration: 5s;
-    animation-delay:1s;
-    animation-timing-function:linear;
-}
+    background-color: rgb(255, 0, 111);
+    grid-column-start:5;
+    grid-column-end:6; 
+    grid-row-start:2;
+    grid-row-end:5;
+} 
 .child5{
-    height: 20vh;
-    width: 20vw;
-    background-color: blue;
-    animation-name:some;
-    animation-duration: 5s;
-    animation-delay:1s;
-    animation-timing-function:ease-out;
-    animation-iteration-count: infinite;
-    animation-fill-mode: backwards;
-
-}
-@keyframes some{
-    0%{
-        background-color: red;
-        position: absolute;
-        top:0px;
-        left: 0px;
-    }
-     10%{
-        background-color: yellow;
-        position:absolute;
-        top:0px;
-        right:0px;
-
-    }
-    25%{
-        background-color:pink;
-        position:absolute;
-        bottom:0px;
-        left:0px;
-    }
-    50%{
-        background-color: black;
-        position:absolute;
-        bottom:0px;
-        right:0px;
-    }
-    75%{
-        background-color: aquamarine;    
-    }
-    100%{
-        background-color: brown;
-    }
-
-}
+    background-color: rgb(255, 0, 0);
+    grid-column-start:1;
+    grid-column-end:6; 
+    grid-row-start:5;
+    grid-row-end:6;
+} 
